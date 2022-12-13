@@ -1,0 +1,235 @@
+body{
+	font-family: 'Roboto', sans-serif;
+	user-select: none;
+	background: #efefef;
+}
+header{
+	position: fixed;
+	z-index: 2;
+	width: 100%;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.15);
+}
+.container{
+	max-width: 82vw;
+	height: 100%;
+	margin: 0 auto;
+}
+.headBlock{
+	display: flex;
+	height: 100%;
+  	flex-flow: row wrap;
+  
+  	align-items: center;
+}
+.logoText{
+	position: absolute;
+	width: 148px;
+	height: 34px;
+
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 107.52%;
+
+	/* or 34px */
+	text-align: center;
+
+	color: #FFBF5F;
+}
+#menu{
+    margin-left: auto;
+}
+#menu li {
+	display: inline-block;
+	margin-right: 2vw;
+    }
+#menu a {
+	position: relative;
+	color: #757575;
+	width: 110px;
+	height: 50px;
+	text-decoration: none;
+	border: 3px solid white;
+	padding:15px 0px 15px 0px;
+    }
+#menu a:hover {
+	color: #111;
+	border: 3px solid white;
+	padding:15px 0px 18px 0px;
+	border-bottom-color: #DDDFE0;
+    }
+#menu li:last-child {
+       margin-right: 0;
+    }
+
+.homePageBlock{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.textWelcome{
+	position: relative;
+	width: 40vh;
+	height: 60vw;
+	min-height: 40vw;
+	min-width: 40vw;
+
+	top: 4em;
+
+}
+.textWelcome h1{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(16px + 2vw);
+	line-height: calc(1em + 1vw);
+	color: #000000;
+}
+.textWelcome p{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(14px + 0.5vw);
+	line-height:  1.3em;
+	color: #000000;
+}
+.authorizationPanel{
+	position: relative;
+	margin-left: auto;
+	width: 500px;
+	height: 650px;
+	top: 7em;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+.containerAuth{
+	max-width: 80%;
+	height: 100%;
+	margin: 0 auto;
+}
+.containerAuthorizationBlock{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.entryText{
+	position: relative;
+	top: 10px;
+}
+.entryText h1{
+	font-style: normal;
+	font-weight: 400;
+	text-align: center;
+	font-size:calc(16px + 2vw);
+	line-height: calc(1em + 1vw);
+	color: #000000;
+}
+.loginFieldText{
+	position: relative;
+	width: 100%;
+}
+.loginFieldText p{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(11px + 0.1vw);
+	line-height:  1.3em;
+	color: #000000;
+}
+.loginField{
+	box-sizing: border-box;
+
+	position: relative;
+	width: 100%;
+	height: 40px;
+
+	background: #FFFFFF;
+	border: 1px solid #FFBF5F;
+	border-radius: 5px;
+}
+.emailFieldText{
+	position: relative;
+	width: 100%;
+}
+.emailFieldText p{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(11px + 0.1vw);
+	line-height:  1.3em;
+	color: #000000;
+}
+.emailField{
+	box-sizing: border-box;
+
+	position: relative;
+	width: 100%;
+	height: 40px;
+
+	background: #FFFFFF;
+	border: 1px solid #FFBF5F;
+	border-radius: 5px;
+}
+.passvordFieldText{
+	position: relative;
+	width: 100%;
+
+}
+.passvordFieldText p{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(11px + 0.1vw);
+	line-height:  1.3em;
+	color: #000000;
+}
+.passvordField{
+	box-sizing: border-box;
+
+	position: relative;
+	width: 100%;
+	height: 40px;
+
+	background: #FFFFFF;
+	border: 1px solid #FFBF5F;
+	border-radius: 5px;
+}
+.authorizationButton{
+	box-sizing: border-box;
+
+	position: relative;
+	width: 100%;
+	height: 40px;
+	top: 40px;
+
+	background: #FFBF5F;
+	border: 1px solid #FFBF5F;
+	border-radius: 5px;
+}
+.authorizationButton:active{
+	box-sizing: border-box;
+	background: #e09628;
+	border: 1px solid #e09628;
+	border-radius: 5px;
+}
+.registerLinkText{
+	position: relative;
+	width: 100%;
+	height: 40px;
+
+	top: 60px;
+}
+.registerLinkText p{
+	font-style: normal;
+	font-weight: 400;
+	font-size:calc(11px + 0.1vw);
+	line-height:  1.3em;
+	text-align: center;
+
+	color: #000000;
+}
+.homeAboutMeBlock{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
