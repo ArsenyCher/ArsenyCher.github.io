@@ -1,7 +1,7 @@
 body{
 	font-family: 'Roboto', sans-serif;
 	user-select: none;
-	background: #efefef;
+	background: #ffffff;
 	margin: 60px 0px 0px 0px;
 	height: 100%;
 }
@@ -15,25 +15,25 @@ header{
 	background: #FFFFFF;
 	box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.15);
 }
-.style_gray{
-	position: relative;
+.req_content_container{
 	width: 100%;
 	height: 100%;
-	background: #efefff;
+	background: #efefef;
+	padding: 50px 0px 0px 0px;
 }
 .container{
 	max-width: 82vw;
 	height: 100%;
 	margin: 0 auto;
 }
-.headBlock{
+.head_block{
 	display: flex;
 	height: 100%;
   	justify-content: space-between;
-  
+
   	align-items: center;
 }
-.logoText{
+.logo_text{
 	position: relative;
 
 	font-weight: 700;
@@ -67,60 +67,74 @@ header{
 	padding:15px 0px 21px 0px;
 	border-bottom-color: #DDDFE0;
     }
-.homePageBlock{
+.req_content_container{
 	position: relative;
+	min-height: 100vh;
+}
+.home_page_block{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	top: 4em;
+	width: 100%;
 	height: 100%;
 }
-.textWelcome{
+.text_welcome{
 	position: relative;
 	width: 30vh;
 	min-width: 40vw;
-
 }
-.textWelcome h1{
+.text_welcome h1{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(16px + 2vw);
 	line-height: calc(1em + 1vw);
 	color: #000000;
 }
-.textWelcome p{
+.text_welcome p{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(14px + 0.5vw);
 	line-height:  1.3em;
 	color: #000000;
 }
-.authorizationPanel{
+.registration_panel_block{
 	position: relative;
+	margin-left: auto;
 	width: 500px;
 	height: 650px;
-	top:3em;
+
 
 	background: #FFFFFF;
 	box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.15);
 	border-radius: 10px;
 }
-.containerAuth{
+.login_panel_block{
+	position: relative;
+	margin-left: auto;
+	width: 500px;
+	height: 450px;
+	top: 3em;
+
+	background: #FFFFFF;
+	box-shadow: 0px 0px 16px 1px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+}
+.container_auth{
 	max-width: 80%;
 	height: 100%;
 	margin: 0 auto;
 }
-.containerAuthorizationBlock{
+.container_authorization{
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
-.entryText{
+.entry_text{
 	position: relative;
 	top: 10px;
 }
-.entryText h1{
+.entry_text h1{
 	font-style: normal;
 	font-weight: 400;
 	text-align: center;
@@ -128,18 +142,18 @@ header{
 	line-height: calc(1em + 1vw);
 	color: #000000;
 }
-.loginFieldText{
+.login_field_text{
 	position: relative;
 	width: 100%;
 }
-.loginFieldText p{
+.login_field_text p{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(11px + 0.1vw);
 	line-height:  1.3em;
 	color: #000000;
 }
-.loginField{
+.login_field{
 	box-sizing: border-box;
 
 	position: relative;
@@ -150,18 +164,18 @@ header{
 	border: 1px solid #FFBF5F;
 	border-radius: 5px;
 }
-.emailFieldText{
+.email_field_text{
 	position: relative;
 	width: 100%;
 }
-.emailFieldText p{
+.email_field_text p{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(11px + 0.1vw);
 	line-height:  1.3em;
 	color: #000000;
 }
-.emailField{
+.email_field{
 	box-sizing: border-box;
 
 	position: relative;
@@ -172,19 +186,19 @@ header{
 	border: 1px solid #FFBF5F;
 	border-radius: 5px;
 }
-.passvordFieldText{
+.password_field_text{
 	position: relative;
 	width: 100%;
 
 }
-.passvordFieldText p{
+.password_field_text p{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(11px + 0.1vw);
 	line-height:  1.3em;
 	color: #000000;
 }
-.passvordField{
+.password_field{
 	box-sizing: border-box;
 
 	position: relative;
@@ -195,7 +209,7 @@ header{
 	border: 1px solid #FFBF5F;
 	border-radius: 5px;
 }
-.authorizationButton{
+.authorization_button{
 	box-sizing: border-box;
 
 	position: relative;
@@ -207,20 +221,20 @@ header{
 	border: 1px solid #FFBF5F;
 	border-radius: 5px;
 }
-.authorizationButton:active{
+.authorization_button:active{
 	box-sizing: border-box;
 	background: #e09628;
 	border: 1px solid #e09628;
 	border-radius: 5px;
 }
-.registerLinkText{
+.register_link_text{
 	position: relative;
 	width: 100%;
 	height: 40px;
 
 	top: 60px;
 }
-.registerLinkText p{
+.register_link_text p{
 	font-style: normal;
 	font-weight: 400;
 	font-size:calc(11px + 0.1vw);
@@ -229,16 +243,7 @@ header{
 
 	color: #000000;
 }
-.style_white{
-	position: relative;
-	background: white;
-	width: 100%;
-	height: 100%;
-	top: 7em;
-
-}
-.homeAboutMeBlock{
-	position: relative;
+.home_about_me_block{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -249,6 +254,17 @@ header{
 	font-size:calc(16px + 2vw);
 	line-height: calc(1em + 1vw);
 	color: #000000;
+}
+.ab_me_content_container{
+	background: white;
+	padding: 50px 0px 50px 0px;
+}
+.contact_content_container{
+	background: #efefef;
+	padding: 50px 0px 50px 0px;
+}
+.contact_text{
+	position: relative;
 }
 .contact_text h1{
 	font-style: normal;
@@ -301,7 +317,6 @@ header{
 
 	border: 1px solid #FFBF5F;
 }
-
 footer{
 	position: relative;
 	width: 100%;
@@ -371,4 +386,4 @@ footer{
 	width: 10vw;
 	min-width: 60px;
 	text-decoration: none;
-    }
+}
