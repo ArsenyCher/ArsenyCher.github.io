@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FoxFile</title>
+    <link rel="stylesheet" href={% static "my_files.css"%}>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="head_block">
+                <div class="logo_text"><a href={% url "login"%}>FoxFile</a></div>
+                <div class="user_area_block">
+                    <div class="user_area">
+                        <div class="user_name">user<br><a href="{% url "logout" %}">Выйти</a></div>
+                        <div class="user_circle"><img src={% static 'standartIcon.svg '%}></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="site_content_block">
+            <div class="list_menu">
+                <div class="list_menu_block">
+                    <div class="menu">
+                        <a href="{% url "myImage"%}">Фото</a>
+                        <a class="active" href="">Документы</a>
+                    </div>
+                </div>
+            </div>
+            <div class="info_menu_block">
+                <div class="container_menu">
+                    <div class="content_menu_block">
+                        <div class="wrapper exmpl"> <img src="{{ file.file.url}}"> </div>
+                        <div class="menu_block_text_container">
+                            <div class="info_menu_block_text"><p>Название</p><p></p></div>
+                        </div>
+                        <button class="add_files_button" onclick="document.location='{% url "addFiles"%}'">+</button>
+                    </div>
+                </div>
+            </div>
+                    <div class="files_menu_block">
+                        <div class="container_menu">
+                            <div class="content_menu_block">
+                                <img src={% static 'standartfileicon.svg ' %}>
+                                <div class="menu_block_text_container">
+                                    <div class="info_menu_block_text"><p>test file</p><p></p></div>
+                                </div>
+                                <div class="container_button">
+                                    <a class="action_files_button" href='' download>⤓</a>
+                                    <form method="post" action="{% url 'deleteFiles' file.id %}">
+                                        {% csrf_token %}
+                                        <button class="action_files_button" type="submit">×</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    </div>
+    </div>
+</body>
+</html>
