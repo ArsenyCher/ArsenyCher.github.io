@@ -1,106 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;1,100&display=swap" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>FoxCloud</title>
-  <link rel="stylesheet" type="text/css" href="testcss.css">
-</head>
-<body>
-    <header>
-		<div class="container">
-			<div class="head_block">
-                <div class="logo_text">FoxFile</div>
-				<div class="menu">
-                    <a href="#contact_anchor">Контакты</a>
-                    <a href="#ab_me_anchor">О нас</a>
-                    <a href="#reg_anchor">Обзор</a>
-                </div>
-			</div>
-		</div>
-	</header>
-    <div id="reg_anchor" class="req_content_container">
-		<div class="container">
-			<div class="home_page_block">
-				<div class="text_welcome"><h1>FoxFile - надёжный менеджер для ваших фото и файлов</h1><p>Вы можете хранить файлы и папки, а также работать над ними на компьютере или мобильном устройстве.</p></div>
-				<div class="login_panel_block">
-    <div class="container_auth">
-        <div class="container_authorization">
-            <form action="{% url 'login' %}" method="post">
-                <div class="entry_text"><h1>Вход</h1></div>
-                <div class="login_field_text"><p>Логин</p></div>
-                <input type="text" name="username" placeholder="Username" class="login_field">
-                <div class="password_field_text"><p>Пароль</p></div>
-                <input type="password" name="password" placeholder="Password" class="password_field">
-                <button class="authorization_button" type="submit">Войти</button>
-                <div class="register_link_text"><p>Нет аккаунта? <a href="/register">Регистрация</a></p></div>
-                <div>
-                </div>
-            </form>
-        </div>
-    </div>
-</div>
-			</div>
-		</div>
-    </div>
-    <div id="ab_me_anchor" class="ab_me_content_container">
-        <div class="container">
-            <div class="home_about_me_block">
-                <div class="about_me_text"><h1>О нас</h1></div>
-                <div><p>Web-приложение файловый менеджер с открытым исходным кодом, который позволяет осуществлять поиск и управление файлами. Файловый менеджер позволяет вам быстро и легко находить и управлять файлами на компьютере. Вы можете легко получить доступ к файлам, хранящимся на других компьютерах в сети, а также просматривать их. Если вы являетесь опытным пользователем, то сможете настроить работу с файлами по своему усмотрению. Интерфейс программы достаточно прост, и в нем очень легко разобраться.</p></div>
-            </div>
-        </div>
-    </div>
-    <div id="contact_anchor" class="contact_content_container">
-        <div class="container">
-            <div class="home_contact_block">
-                <div class="contact_text"><h1>Контакты</h1></div>
-                <div class="contact_container">
-                    <div class="VK_phone_email_block">
-                        <a href="https://vk.com/foxfilee">
-                            <div class="VK_phone_email_container">
-                                <div class="VK_phone_email_circle"></div>
-                                <div class="VK_text"><p>VK</p><p>FoxFile</p></div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="VK_phone_email_block">
-                        <div class="VK_phone_email_container">
-                            <div class="VK_phone_email_circle"></div>
-                            <div class="VK_text"><p>Телефон</p><p>8(951)-837-18-94</p><p>Чернышев Арсений</p></div>
-                        </div>
-                    </div>
-                    <div class="VK_phone_email_block">
-                        <a href="mailto:arsentiyc@inbox.ru">
-                            <div class="VK_phone_email_container">
-                                <div class="VK_phone_email_circle"></div>
-                                <div class="email_text"><p>Email</p><p>arsentiyc@inbox.ru</p></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container">
-            <div class="footer_container">
-                <div class="footer_logo_text">FoxFile</div>
-                <div class="all_rights_reserved"><p>© 2022 FoxCloud</p></div>
-                <div class="footer_menu">
-                    <a href="#reg_anchor">Обзор</a>
-				    <a href="#ab_me_anchor">О нас</a>
-				    <a href="#contact_anchor">Контакты</a>
-                </div>
-                <div class="footer_circle">
-                    <div class="footer_circle_container">
-                        <div class="footer_VK_circle"></div>
-                        <div class="footer_email_circle"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
+<!DOCTYPE HTML>
+   <html>
+   <head>
+      <title>Главная</title>
+      <meta charset="utf-8">
+   </head>
+   <body>  
+      <p>Моя первая веб-страница</p>
+      <a href="FoxFile/main_page.html">FoxFile</a>
+   </body>
 </html>
